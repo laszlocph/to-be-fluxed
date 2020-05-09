@@ -1,0 +1,16 @@
+envs:
+  staging:
+    - name: deleteme
+      strategy: simple
+      trigger: .*/push
+      namespace: gimlet-staging
+      image: nginx
+      tag: '1.17'
+      containerPort: '80'
+    - name: deleteme2
+      strategy: simple
+      trigger: .*/push
+      namespace: gimlet-staging
+      image: nginx
+      tag: '1.17'
+      containerPort: '80'
